@@ -1,0 +1,24 @@
+GET http://localhost:3005/books HTTP/1.1
+
+###
+GET http://localhost:3005/books/5 HTTP/1.1
+
+###
+POST http://localhost:3005/books HTTP/1.1
+Content-Type: application/json
+
+{"titulo": "Padre Rico padre pobre", 
+"autor": "no se", 
+"genero": "Realismo mágico", 
+"editorial": "Editorial Sudamericana"}
+
+###
+PUT http://localhost:3005/books/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "autor": "flor"
+}
+
+###
+DELETE http://localhost:3005/books/5 HTTP/1.1
