@@ -27,7 +27,7 @@ const escribirDatos= (datos)=> {
 
 
 app.get("/", (req, res) => {
-    res.send("welcome to my firt API with nodejs!")
+    res.send(leerDatos())
 })
 
 app.get("/books", (req,res)=> {
@@ -79,6 +79,6 @@ app.delete("/books/:id", (req,res)=> {
 });
 
 app.listen(3005, () => {
-    console.log('server listening on port 3004')
+    console.log('server listening on port 3005')
 });
 
